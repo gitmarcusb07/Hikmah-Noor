@@ -31,7 +31,7 @@ export default defineConfig({
       // (gems IS indexed, so it stays in.)
       filter: (page) =>
         !/\/tools\/(zakat-calculator|classical-finance\/ushr-guide)\/$/.test(page) &&
-        !/\/tools\/read\/\d/.test(page) &&
+        !/\/tools\/read\//.test(page) &&
         !/\/tools\/my-progress\//.test(page) &&
         !/\/al-mushrif\//.test(page) &&
         !/\/offline\//.test(page) &&
