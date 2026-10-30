@@ -68,7 +68,7 @@ if (entry) {
 {surah ? (
 <BaseLayout
   title={`Surah ${surah.name} (${surah.englishName}) with Urdu, English & Hindi Translation`}
-  description={`Read Surah ${surah.name} (${surah.englishName}) — ${surah.verseCount} verses in Arabic (Uthmani) with Urdu, English and Hindi meaning, transliteration and audio recitation.`}
+  description={tafsir ? `Read Surah ${surah.name} (${surah.englishName}) — ${surah.verseCount} verses in Arabic with Urdu, English and Hindi meaning and audio. Themes: ${tafsir.themes.join(', ')}.` : `Read Surah ${surah.name} (${surah.englishName}) — ${surah.verseCount} verses in Arabic (Uthmani) with Urdu, English and Hindi meaning, transliteration and audio recitation.`}
   locale={locale}
   keywords={`surah ${surah.name.toLowerCase()}, surah ${surah.num}, ${surah.slug}, surah ${surah.name.toLowerCase()} in urdu, surah ${surah.name.toLowerCase()} english translation, surah ${surah.name.toLowerCase()} hindi meaning, surah ${surah.name.toLowerCase()} transliteration, surah ${surah.name.toLowerCase()} with audio, surah ${surah.name.toLowerCase()} recitation${tafsir ? `, surah ${surah.name.toLowerCase()} tafsir, ${tafsir.themes.join(', ').toLowerCase()}` : ''}`}
   type="article"
